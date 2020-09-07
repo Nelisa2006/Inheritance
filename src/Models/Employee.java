@@ -1,3 +1,5 @@
+package Models;
+
 public class Employee {
     String fullnames;
     String email;
