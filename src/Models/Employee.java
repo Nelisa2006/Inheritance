@@ -7,6 +7,19 @@ public class Employee {
     Double salary;
     Double numberOfHoursWorked;
 
+    //Default Constructor
+    public Employee (){}
+
+    //Overloaded Constructor
+    public Employee (String fullnames, String email, int age, Double salary, Double numberOfHoursWorked){
+        fullnames = fullnames;
+        email = email;
+        age = age;
+        salary = salary;
+        numberOfHoursWorked = numberOfHoursWorked;
+
+    }
+
     public String getFullnames(){
         return fullnames;
     }
