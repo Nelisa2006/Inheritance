@@ -1,3 +1,5 @@
+package Models;
+
 import Models.Employee;
 
 public class Distributor extends Employee {
