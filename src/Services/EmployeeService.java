@@ -15,7 +15,20 @@ public class EmployeeService {
 
 
     public void addEmployee(Employee employee){
-        employeeList.add(employee);
+        Boolean found;
+        found = false;
+
+        //for loop to loop through list of employees
+        for(int x=0; x<=employeeList.size(); x++){
+            if(employee.getEmail() == employeeList.get(x).getEmail()){
+                found = true;
+                break;
+            }
+        }
+        if(found == false)
+            employeeList.add(employee);
+        else
+            System.out.println("email address already exist");
     }
 
     public List<Employee> getEmployees(){
